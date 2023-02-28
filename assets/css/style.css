@@ -1,65 +1,123 @@
 body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+  flex-wrap: wrap;
 }
 
 main {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #4b4f53;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #4b4f53;
 }
 
 h2 {
-  padding-right: 10px;
+padding-right: 10px;
 }
 
 section {
-    display: flex;
+  display: flex;
 }
 
 .hero {
-    height: 200px;
-    background-color: cornflowerblue;
+  height: 200px;
+  background-color: cornflowerblue;
 }
 
-.aboutme {
-  display: flex;
-  flex-wrap: wrap;
+.flex-wrap {
+display: flex;
+flex-wrap: wrap;
 }
 
-.aboutme div {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 4;
+.about-me {
+display: flex;
+flex-wrap: wrap;
+}
+
+.about-me div {
+display: flex;
+flex-wrap: wrap;
+flex: 4;
+}
+
+.contact-me {
+display: flex;
+}
+
+.work {
+justify-content: space-between;
+}
+
+.picture-structure {
+flex: 0 0 77%;
+justify-content: center;
 }
 
 #img-1 {
-  min-height: 400px;
-  flex-basis: 100%;
-  background-image: url("../images/01-html-css-git-homework-demo.png");
-  /* background-position: ; */
+min-height: 400px;
+flex-basis: 100%;
+background-image: url("../images/01-html-css-git-homework-demo.png");
+background-repeat: no-repeat;
+background-position: center;
+}
+
+#img-2 {
+background-image: url("../images/IMG_6560.jpg");
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
 }
 
 .side-border {
-  border-right: 3px solid rgb(102, 192, 217);
-  margin-right: 30px;
-  text-align: right;
-  font-size: 50px;
-  flex-basis: 20%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
+border-right: 3px solid rgb(102, 192, 217);
+margin-right: 1.2rem;
+text-align: right;
+font-size: 50px;
+flex-basis: 20%;
+font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
 }
 
 .flex-item {
-  min-width: 250px;
-  min-height: 250px;
-  flex-basis: calc(50% - 1rem);
-  margin: .5rem;
+min-width: 250px;
+min-height: 250px;
+flex-basis: calc(50% - 10px);
+margin: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+header {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.side-border{
+  border-right: none;
+  text-decoration: underline 5px solid #6dcebb33;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  flex-basis: 100%;
+}
+
+.about-me, .work, .contact-me {
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me div {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.flex-item {
+  flex-basis: 100%;
+}
 }
