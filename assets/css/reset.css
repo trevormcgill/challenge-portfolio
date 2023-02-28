@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 html {
@@ -10,11 +10,11 @@ html {
 
 body {
   min-height: 100%;
-  line-height: 1;
-  font-family: sans-serif;
+  /* line-height: 1;
+  font-family: sans-serif; */
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
 }
 
@@ -26,4 +26,4 @@ pre, code {
 
 ol, ul {
   list-style: none;
-}
+} */
