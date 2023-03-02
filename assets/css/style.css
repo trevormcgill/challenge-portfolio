@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -56,23 +60,56 @@ justify-content: space-between;
 }
 
 .picture-structure {
+display: flex;
+flex-wrap: wrap;
 flex: 0 0 77%;
 justify-content: center;
 }
 
 #img-1 {
+  width: 100%;
+  max-width: 81%;
+  min-height: 400px;
+  flex-basis: 100%;
+  background-image: url("../images/Transformative-business-action-towards-nature-positive-from-national-to-global-scale-scaled.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+/* #img-1 {
+width: 100%;
+max-width: auto;
 min-height: 400px;
 flex-basis: 100%;
 background-image: url("../images/01-html-css-git-homework-demo.png");
 background-repeat: no-repeat;
 background-position: center;
-}
+} */
+
 
 #img-2 {
+  background-image: url("../images/952bc81c-1caf-48a1-b5f6-bace216d353e_Heromyndir_robert_wessman_minni+\(1\).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* flex-basis: 40%; */
+  /* max-width: 600px;
+  min-width: 600px; */
+}
+
+#img-3 {
+  background-image: url("../images/07-gettyimages-1195458582_largestmountains.jpg");
+  background-position: center;
+  /* flex-basis: 40%; */
+  /* max-width: 600px;
+  min-width: 600px; */
+}
+
+#img-4 {
 background-image: url("../images/IMG_6560.jpg");
 background-position: center;
-background-size: contain;
+background-size: cover;
 background-repeat: no-repeat;
+/* flex-basis: 40%; */
 }
 
 .side-border {
@@ -87,11 +124,11 @@ font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans
 .flex-item {
 min-width: 250px;
 min-height: 250px;
-flex-basis: calc(50% - 10px);
+flex-basis: 40%;
 margin: .5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
 header {
   flex-direction: column;
   align-items: center;
@@ -117,7 +154,13 @@ header {
   margin-bottom: 1rem;
 }
 
+#img-1 {
+  max-width: 79.7%;
+}
+
 .flex-item {
   flex-basis: 100%;
+  max-width: 80%;
 }
 }
+
