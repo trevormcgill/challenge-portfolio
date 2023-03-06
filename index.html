@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Trevor McGill's Portfolio</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -15,15 +15,12 @@
         <h1 class="header-box">Trevor McGill</h1>
         <nav>
           <ul>
-            <li><a href="#"></a>About Me</li>
-            <li><a href="#"></a>Work</li>
-            <li><a href="#"></a>Contact Me</li>
-            <li><a href="#"></a>Resume</li>
+            <!-- Contains nav-bar, links to each section of the page and clicking Resume will automatically download a sample resume pdf-->
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+            <li><a href="./assets/images/resume-sample.pdf" download>Resume</a></li>
           </ul>
-            <!-- <a>About Me</a>
-            <a>Work</a>
-            <a>Contact Me</a>
-            <a>Resume</a> -->
         </nav>
     </header>
 
@@ -31,7 +28,7 @@
     </div>
 
     <main>
-        <section class="about-me">
+        <section id="about-me" class="about-me">
             <h2 class="side-border">About Me</h2>
             <div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, veritatis! Cum alias reiciendis
@@ -46,16 +43,16 @@
                   reprehenderit architecto placeat aperiam numquam quo?</p>
             </div>
         </section>
-        <section class="work flex-wrap">
+        <section id="work" class="work flex-wrap">
             <h2 class="side-border">Work</h2>
-
+            <!-- contains the five "work" pictures. only the first two are clickable with links -->
             <div class="picture-structure">
-              <div class="flex-item blur" id="img-1">
+              <a href="https://trevormcgill.github.io/code-refactor/" class="flex-item blur" id="img-1">
                 <p>Code Refactor</p>
-              </div>
-              <div class="flex-item blur" id="img-2">
-                <p>Mock-Portfolio</p>
-              </div>
+              </a>
+              <a href="https://trevormcgill.github.io/challenge-portfolio/" class="flex-item blur" id="img-2">
+                <p>Portfolio</p>
+              </a>
               <div class="flex-item blur" id="img-3">
                 <p>Calculator</p>
               </div>
@@ -67,7 +64,7 @@
               </div>
             </div>
         </section>
-        <section class="contact-me">
+        <section id="contact-me" class="contact-me">
             <h2 class="side-border">Contact Me</h2>
             <ul>
               <li><a href="mailto:example@example.com">Email</a></li>
