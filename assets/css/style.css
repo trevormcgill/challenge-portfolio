@@ -278,8 +278,8 @@ a {
   box-shadow: inset 0px 0px 8px var(--blue-accent), 0 0 15px var(--blue-accent)
 }
 
-.flex-item {
-}
+/* .flex-item {
+} */
 
 .flex-item p {
   position: absolute;
