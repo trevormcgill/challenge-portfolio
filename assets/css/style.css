@@ -1,7 +1,10 @@
 :root {
   --blue-accent: rgb(102, 192, 217);
   --mist: rgba(109, 206, 187, 0.2);
+  --underline-color: rgba(109, 206, 187, 0.2)
 }
+
+
 
 * {
   box-sizing: border-box;
@@ -55,7 +58,7 @@ nav ul {
 nav li {
   color: #0e0e0f;
   margin: 0 15px; /* Add margin to the left and right */
-  border-bottom: 2px solid #6dcebb33;
+  border-bottom: 2px solid var(--underline-color);
 }
 
 nav a {
@@ -120,6 +123,7 @@ a {
   padding-left: 9%;
   padding-right: 9%;
 }
+
 .about-me div p {
   margin: 8px;
   font-size: 20px;
@@ -141,11 +145,13 @@ a {
   width: 77%;
 }
 
+/* centers contact me info at the bottom of the page */
 .contact-me ul li {
   flex-grow: 1;
   text-align: center;
 }
 
+/* design of contact me text/links at the bottom of the page */
 .contact-me ul li a {
   text-decoration: none;
   color: #0e0e0f;
@@ -202,7 +208,9 @@ a {
   background-position: top;
 }
 
-/* .grayscale {
+/* Grayscale effect. Not sure if it's standard practice to keep code like this here but I'm just going to leave it. It was difficult to choose between the blur effect and this grayscale.
+
+.grayscale {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
   filter: gray;
   -webkit-filter: grayscale(100%);
@@ -213,7 +221,9 @@ a {
 .grayscale:hover {
   filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(0%);
-} */
+} 
+
+*/
 
 /* adds blur effect to images */
 .blur {
@@ -275,7 +285,7 @@ a {
   font-weight: normal;
 }
 
-
+/* mobile responsiveness */
 @media screen and (max-width: 1080px) {
 header {
   flex-direction: column;
