@@ -306,6 +306,10 @@ h1 {
   padding-right: 1%;
 }
 
+/* h2 {
+  padding-right: 0px;
+} */
+
 .side-border{
   border-right: none;
   text-decoration: underline 5px solid #6dcebb33;
