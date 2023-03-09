@@ -29,7 +29,6 @@ header {
 
 .header-box {
   margin-left: -23px;
-  margin-right: 1%;
   border-radius: 2px;
   background-image: linear-gradient(
     var(--mist) 0%,
