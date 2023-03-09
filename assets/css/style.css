@@ -324,6 +324,10 @@ h1 {
   flex-direction: column;
 }
 
+.contact-me ul li {
+  margin-bottom: 10px;
+}
+
 .about-me div {
   flex: 1;
   margin-bottom: 1rem;
