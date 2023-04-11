@@ -177,9 +177,9 @@ a {
   max-width: 81%;
   min-height: 400px;
   flex-basis: 100%;
-  background-image: url("../images/140296-scaled.jpg");
+  background-image: url("../images/u8yet.png");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
   }
 
 
@@ -195,8 +195,8 @@ a {
 }
 
 #img-4 {
-  background-image: url("../images/IMG_6560.jpg");
-  background-position: center;
+  background-image: url("../images/04-web-apis-homework-demo.gif");
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -205,6 +205,12 @@ a {
   background-image: url("../images/71d709648a71a8d455b4a8497d2f2041_e5fa2b47_1280.jpg");
   background-repeat: no-repeat;
   background-position: top;
+}
+
+#img-6 {
+  background-image: url("../images/140296-scaled.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 /* Grayscale effect. Not sure if it's standard practice to keep code like this here but I'm just going to leave it. It was difficult to choose between the blur effect and this grayscale.
